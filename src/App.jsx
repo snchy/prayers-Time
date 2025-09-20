@@ -52,8 +52,10 @@ function App() {
           </select>
           </div>
           <div className="date">
-            <h3>التاريخ</h3>
-            <h4>2025-09-8</h4>
+            <h3> التاريخ </h3>
+            {/* <h4>{dateTime}</h4> */}
+            <Prayers time={dateTime}/>
+
         </div>
       </div>
       <Prayers name="الفجر" time={formatTimes (prayerTimes.Fajr)}/>
